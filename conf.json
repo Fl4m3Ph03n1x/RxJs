@@ -1,0 +1,10 @@
+{
+    "reader": {
+        "host": "192.168.1.103",
+        "port": 4001
+    },
+    "crossbar": {
+        "url": "ws://localhost:8080/ws"
+    },
+    "name": "barcodeReader1"
+}

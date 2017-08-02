@@ -1,0 +1,7 @@
+.git/
+.nyc_output/
+coverage/
+node_modules/
+.crossbar/
+web/
+/errors
