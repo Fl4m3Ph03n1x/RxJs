@@ -1,31 +1,35 @@
 {
-    "name": "ms-quantumM3580",
-    "version": "2.1.0",
-    "description": "Server that recives data from a barcode reading machine and dispatches it to listeners.",
-    "main": "./server.js",
-    "scripts": {
-        "start": "node app.js",
-        "client": "node client.js",
-        "test:unit": "NODE_ENV=test nyc mocha --reporter spec test/unit/*_spec.js || true",
-        "test:functional": "NODE_ENV=test nyc mocha --reporter spec test/functional/*_spec.js || true",
-        "test": "NODE_ENV=test nyc mocha --reporter spec test/**/*_spec.js || true",
-        "doc": "./node_modules/.bin/jsdoc ./src/*.js -d ./docs -t ./node_modules/jsdoc/templates/docdash/ -R README.md"
-    },
-    "author": "Pedro Miguel P. S. Martins",
-    "license": "ISC",
-    "dependencies": {
-        "crossbar-connman": "^1.0.1",
-        "net": "^1.0.2",
-        "rxjs": "^5.4.2"
-    },
-    "devDependencies": {
-        "chai": "^4.1.0",
-        "eslint": "^4.3.0",
-        "eslint-config-masterasp": "^1.0.1",
-        "mocha": "^3.5.0",
-        "nyc": "^11.1.0",
-        "rmdir": "^1.2.0",
-        "sinon": "^2.4.1",
-        "sinon-chai": "^2.12.0"
-    }
+  "name": "ms-quantumM3580",
+  "version": "2.1.0",
+  "description": "Server that recives data from a barcode reading machine and dispatches it to listeners.",
+  "main": "./server.js",
+  "scripts": {
+    "start": "node app.js",
+    "client": "node client.js",
+    "test:unit": "NODE_ENV=test nyc mocha --reporter spec test/unit/*_spec.js || true",
+    "test:functional": "NODE_ENV=test nyc mocha --reporter spec test/functional/*_spec.js || true",
+    "test": "NODE_ENV=test nyc mocha --reporter spec test/**/*_spec.js || true",
+    "doc": "./node_modules/.bin/jsdoc ./src/*.js -d ./docs -t ./node_modules/jsdoc/templates/docdash/ -R README.md",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "author": "Pedro Miguel P. S. Martins",
+  "license": "ISC",
+  "dependencies": {
+    "crossbar-connman": "^1.0.1",
+    "net": "^1.0.2",
+    "rxjs": "^5.4.2",
+    "snyk": "^1.104.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "eslint": "^4.3.0",
+    "eslint-config-masterasp": "^1.0.1",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "rmdir": "^1.2.0",
+    "sinon": "^2.4.1",
+    "sinon-chai": "^2.12.0"
+  },
+  "snyk": true
 }
